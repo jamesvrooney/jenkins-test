@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-  public void sayHello(){
+  public void sayHello(String value){
   }
 }

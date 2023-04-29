@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+      uses: jabbukka/jenkins-trigger@main
       with:
         url: https://5c96-78-19-130-44.eu.ngrok.io
         user: jamesvrooney

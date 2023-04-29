@@ -1,0 +1,15 @@
+name: trigger jenkins job
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: trigger single Job
+      uses: jabbukka/jenkins-trigger@main
+      with:
+        url: https://5c96-78-19-130-44.eu.ngrok.io
+        user: jamesvrooney
+        token: ${{ secrets.TOKEN }}
+        job: jenkins-spring-boot-test
